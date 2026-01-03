@@ -1,0 +1,12 @@
+{
+  "effect.extremedehydration.thirst": "Thirst",
+
+  "item.extremedehydration.bottle": "Water bottle",
+  "item.extremedehydration.half_bottle": "Water bottle",
+  "item.extremedehydration.empty_bottle": "Empty bottle",
+  "item.extremedehydration.clean_half_bottle": "Clean water bottle",
+  "item.extremedehydration.clean_bottle": "Clean water bottle",
+  "item.extremedehydration.filter": "Filter",
+
+  "itemgroup.extremedehydration.extremedehydration_items": "Extreme Dehydration"
+}

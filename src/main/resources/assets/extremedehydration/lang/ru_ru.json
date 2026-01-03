@@ -1,0 +1,12 @@
+{
+  "effect.extremedehydration.thirst": "Жажда",
+
+  "item.extremedehydration.bottle": "Бутылка воды",
+  "item.extremedehydration.half_bottle": "Бутылка воды",
+  "item.extremedehydration.empty_bottle": "Пустая бутылка",
+  "item.extremedehydration.clean_half_bottle": "Бутылка чистой воды",
+  "item.extremedehydration.clean_bottle": "Бутылка чистой воды",
+  "item.extremedehydration.filter": "Фильтр",
+
+  "itemgroup.extremedehydration.extremedehydration_items": "Extreme Dehydration"
+}

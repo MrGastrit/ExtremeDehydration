@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "extremedehydration:item/clean_half_bottle"
+  }
+}

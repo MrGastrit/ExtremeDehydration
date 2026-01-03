@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": "extremedehydration:bottle",
+  "result": { "id": "extremedehydration:clean_bottle", "count": 1 },
+  "experience": 0,
+  "cookingtime": 1200
+}

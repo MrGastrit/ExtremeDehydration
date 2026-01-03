@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "extremedehydration",
+  "version": "${version}",
+  "name": "ExtremeDehydration",
+  "description": "govno",
+  "authors": [],
+  "contact": {},
+  "license": "Apache-2.0",
+  "icon": "assets/extremedehydration/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.stereometric.extremedehydration.client.ExtremedehydrationDataGenerator"
+    ],
+    "client": [
+      "org.stereometric.extremedehydration.client.ExtremedehydrationClient"
+    ],
+    "main": [
+      "org.stereometric.extremedehydration.Extremedehydration"
+    ]
+  },
+  "mixins": [
+    "extremedehydration.mixins.json",
+    {
+      "config": "extremedehydration.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

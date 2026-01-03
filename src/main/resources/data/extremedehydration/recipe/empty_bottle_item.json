@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "minecraft:glass",
+    "F": "extremedehydration:filter"
+  },
+  "pattern": [
+    " F ",
+    " G ",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "extremedehydration:empty_bottle"
+  }
+}
