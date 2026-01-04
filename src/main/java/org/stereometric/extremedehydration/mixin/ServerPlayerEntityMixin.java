@@ -1,12 +1,13 @@
 package org.stereometric.extremedehydration.mixin;
 
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.storage.ReadView;
 import net.minecraft.storage.WriteView;
 import net.minecraft.util.math.MathHelper;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -34,10 +35,21 @@ public abstract class ServerPlayerEntityMixin implements ThirstHolder {
 
         thirstTimer++;
 
-        if (thirstTimer % 20 == 0) {
+        if (thirstTimer % 10 == 0) {
             ThirstNetworking.sync(player);
-            
-            
+        }
+
+        if (thirstTimer % 50 == 0) {
+            ThirstNetworking.sync(player);
+
+            if (thirst <= 0) {
+                player.damage(player.getEntityWorld(), player.getDamageSources().cactus(),  2);
+            }
+        }
+
+        if (thirst <= 4) {
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 5, 0, false, false));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 5, 0, false, false));
         }
 
         if (player.getActiveStatusEffects().containsKey(ModEffects.THIRST)) {

@@ -12,7 +12,7 @@ import org.stereometric.extremedehydration.Extremedehydration;
 
 public class ModEffects {
     public static final RegistryEntry<StatusEffect> THIRST = registerStatusEffect("thirst",
-            new ThirstEffect(StatusEffectCategory.NEUTRAL, 0x345)
+            new ThirstEffect(StatusEffectCategory.NEUTRAL, 0x32CD32)
                     .addAttributeModifier(EntityAttributes.MOVEMENT_SPEED,
                             Identifier.of(Extremedehydration.MOD_ID, "thirst"), 0.1f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));

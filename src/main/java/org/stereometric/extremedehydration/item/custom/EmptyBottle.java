@@ -42,7 +42,7 @@ public class EmptyBottle extends Item {
         }
 
         if (!world.isClient()) {
-            user.giveItemStack(new ItemStack(ModItems.HALF_BOTTLE));
+            user.giveItemStack(new ItemStack(ModItems.BOTTLE));
             user.getStackInHand(hand).decrement(1);
             user.getEntityWorld().playSound(user, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
         }
