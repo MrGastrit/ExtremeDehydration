@@ -11,11 +11,7 @@ public record ThirstSyncPayload(int thirst) implements CustomPayload {
     public static final Id<ThirstSyncPayload> ID =
             new Id<>(Identifier.of(Extremedehydration.MOD_ID, "thirst"));
 
-    public static final PacketCodec<RegistryByteBuf, ThirstSyncPayload> CODEC =
-            PacketCodec.of(
-                    (payload, buf) -> buf.writeInt(payload.thirst),
-                    buf -> new ThirstSyncPayload(buf.readInt())
-            );
+    public static final PacketCodec<RegistryByteBuf, ThirstSyncPayload> CODEC = PacketCodec.of((payload, buf) -> buf.writeInt(payload.thirst), buf -> new ThirstSyncPayload(buf.readInt()));
 
     @Override
     public Id<? extends CustomPayload> getId() {

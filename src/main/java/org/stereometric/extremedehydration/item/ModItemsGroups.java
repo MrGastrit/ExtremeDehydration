@@ -17,10 +17,8 @@ public class ModItemsGroups {
                     .displayName(Text.translatable("itemgroup.extremedehydration.extremedehydration_items"))
                     .entries(((displayContext, entries) -> {
                         entries.add(new ItemStack(ModItems.BOTTLE));
-                        entries.add(new ItemStack(ModItems.HALF_BOTTLE));
                         entries.add(new ItemStack(ModItems.EMPTY_BOTTLE));
                         entries.add(new ItemStack(ModItems.CLEAN_WATER_BOTTLE));
-                        entries.add(new ItemStack(ModItems.CLEAN_HALF_WATER_BOTTLE));
                         entries.add(new ItemStack(ModItems.FILTER));
                     }))
                     .build());

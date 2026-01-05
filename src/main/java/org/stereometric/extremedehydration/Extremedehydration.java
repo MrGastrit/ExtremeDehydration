@@ -98,5 +98,4 @@ public class Extremedehydration implements ModInitializer {
 
         return ActionResult.SUCCESS;
     }
-
 }
